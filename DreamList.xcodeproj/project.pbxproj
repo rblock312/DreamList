@@ -8,22 +8,30 @@
 
 /* Begin PBXBuildFile section */
 		9F16EFE21DF3194C005F894D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F16EFE11DF3194C005F894D /* AppDelegate.swift */; };
-		9F16EFE41DF3194C005F894D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F16EFE31DF3194C005F894D /* ViewController.swift */; };
+		9F16EFE41DF3194C005F894D /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F16EFE31DF3194C005F894D /* MainVC.swift */; };
 		9F16EFE71DF3194C005F894D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9F16EFE51DF3194C005F894D /* Main.storyboard */; };
 		9F16EFEA1DF3194C005F894D /* DreamList.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 9F16EFE81DF3194C005F894D /* DreamList.xcdatamodeld */; };
 		9F16EFEC1DF3194C005F894D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9F16EFEB1DF3194C005F894D /* Assets.xcassets */; };
 		9F16EFEF1DF3194C005F894D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9F16EFED1DF3194C005F894D /* LaunchScreen.storyboard */; };
+		9F16F0051DF3327F005F894D /* ItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F16F0041DF3327F005F894D /* ItemCell.swift */; };
+		9F16F00F1DF355C1005F894D /* MaterialView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F16F00E1DF355C1005F894D /* MaterialView.swift */; };
+		9F16F0111DF4640D005F894D /* apple_bg.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9F16F0101DF4640D005F894D /* apple_bg.jpg */; };
+		9F16F0131DF467DD005F894D /* EditVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F16F0121DF467DD005F894D /* EditVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		9F16EFDE1DF3194C005F894D /* DreamList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DreamList.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9F16EFE11DF3194C005F894D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		9F16EFE31DF3194C005F894D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		9F16EFE31DF3194C005F894D /* MainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
 		9F16EFE61DF3194C005F894D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		9F16EFE91DF3194C005F894D /* DreamList.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = DreamList.xcdatamodel; sourceTree = "<group>"; };
 		9F16EFEB1DF3194C005F894D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9F16EFEE1DF3194C005F894D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9F16EFF01DF3194C005F894D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9F16F0041DF3327F005F894D /* ItemCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemCell.swift; sourceTree = "<group>"; };
+		9F16F00E1DF355C1005F894D /* MaterialView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MaterialView.swift; sourceTree = "<group>"; };
+		9F16F0101DF4640D005F894D /* apple_bg.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = apple_bg.jpg; sourceTree = "<group>"; };
+		9F16F0121DF467DD005F894D /* EditVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EditVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +64,35 @@
 		9F16EFE01DF3194C005F894D /* DreamList */ = {
 			isa = PBXGroup;
 			children = (
+				9F16F0021DF3251D005F894D /* View */,
+				9F16F0031DF32527005F894D /* Model */,
 				9F16EFE11DF3194C005F894D /* AppDelegate.swift */,
-				9F16EFE31DF3194C005F894D /* ViewController.swift */,
 				9F16EFE51DF3194C005F894D /* Main.storyboard */,
 				9F16EFEB1DF3194C005F894D /* Assets.xcassets */,
+				9F16F0101DF4640D005F894D /* apple_bg.jpg */,
 				9F16EFED1DF3194C005F894D /* LaunchScreen.storyboard */,
 				9F16EFF01DF3194C005F894D /* Info.plist */,
 				9F16EFE81DF3194C005F894D /* DreamList.xcdatamodeld */,
 			);
 			path = DreamList;
+			sourceTree = "<group>";
+		};
+		9F16F0021DF3251D005F894D /* View */ = {
+			isa = PBXGroup;
+			children = (
+				9F16EFE31DF3194C005F894D /* MainVC.swift */,
+				9F16F0121DF467DD005F894D /* EditVC.swift */,
+				9F16F00E1DF355C1005F894D /* MaterialView.swift */,
+				9F16F0041DF3327F005F894D /* ItemCell.swift */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		9F16F0031DF32527005F894D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -128,6 +156,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9F16EFEF1DF3194C005F894D /* LaunchScreen.storyboard in Resources */,
+				9F16F0111DF4640D005F894D /* apple_bg.jpg in Resources */,
 				9F16EFEC1DF3194C005F894D /* Assets.xcassets in Resources */,
 				9F16EFE71DF3194C005F894D /* Main.storyboard in Resources */,
 			);
@@ -140,8 +169,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9F16EFE41DF3194C005F894D /* ViewController.swift in Sources */,
+				9F16EFE41DF3194C005F894D /* MainVC.swift in Sources */,
+				9F16F0051DF3327F005F894D /* ItemCell.swift in Sources */,
+				9F16F00F1DF355C1005F894D /* MaterialView.swift in Sources */,
 				9F16EFE21DF3194C005F894D /* AppDelegate.swift in Sources */,
+				9F16F0131DF467DD005F894D /* EditVC.swift in Sources */,
 				9F16EFEA1DF3194C005F894D /* DreamList.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -304,6 +336,7 @@
 				9F16EFF51DF3194C005F894D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
